@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+</head>
+<body>
+<h2> Application Form</h2>
+<form action="form" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username"><br><br>
+    <input type="datetime-local" name="DOB" placeholder="Enter your date of birth"><br><br>
+    <input type="AGE" name="AGE" placeholder="Enter your Age"><br><br>
+    <input type="radio" name="gender" value="male"> Male<br><br>
+    <input type="radio" name="gender" value="female"> Female<br><br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    <input type="text" name="Number" placeholder="Mobile number"><br><br>
+    <input type="text" name="Email" placeholder="Enter your Email ID"><br><br>
+    <input type="text" name="Address" placeholder="Enter your address"><br><br>
+    <form>
+<label> Select Districts </label>
+<select>
+<option value = "Mercedes"> Thiruvananthapuram
+ </option>
+    <option value = "Mercedes"> Kannur
+</option>
+
+<option value = "Audi"> Wayanad
+</option>
+<option value = "Skoda"> Alapuzha
+</option>
+<option value = "Skoda"> Idukki
+</option>
+</select>
+</form>
+</Body><br>
+
+<label> Account Type </label>
+<select>
+<option value = "Mercedes"> Savings Account
+</option>
+<option value = "Mercedes"> Current Account
+</option>
+</select>
+</form>
+</Body><br><br>
+<form>
+<p>Materials Required:</p>
+<input type="checkbox" name="veggies" id="veg1" value="tomato" onclick="return       ValidateSelection();">
+<label for="veg1">DEBIT CARD</label>
+<input form="myForm" type="checkbox" name="veggies" id="veg2"  value="onion" onclick="return ValidateSelection();">
+<label for="veg2">CREDIT CARD</label>
+<input form="myForm" type="checkbox" name="veggies" id="veg3"  value="lettuce" onclick="return ValidateSelection();">
+<label for="veg3">CHEQUE BOOK</label>
+</form>
+<input type="submit">
+<li class="nav-item @@contact"><a class="nav-link" href="credentials//">logout</a></li>
+</body>
+</html>
